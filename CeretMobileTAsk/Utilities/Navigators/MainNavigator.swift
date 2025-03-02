@@ -13,7 +13,7 @@ class MainNavigator:Navigator{
     var coordinator: Coordinator
     
     enum Destination {
-        case home
+       // case home
        
     }
     
@@ -23,8 +23,8 @@ class MainNavigator:Navigator{
     
     func viewController(for destination: Destination) -> UIViewController {
         switch destination{
-        case .home:
-            return HomeVC(coordinator)
+      //  case .home:
+       //     return HomeVC(viewModel: <#T##HomeViewModel#>, coordinator: <#T##Coordinator#>)
 //        case .main:
 //            return MainTabBarVC(coordinator: coordinator)
        

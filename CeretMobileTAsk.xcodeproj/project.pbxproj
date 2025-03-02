@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */; };
+		C3287A062D750695004EEC89 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A052D750695004EEC89 /* GradientView.swift */; };
+		C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A072D750C48004EEC89 /* SearchTextField.swift */; };
+		C3287A192D751229004EEC89 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A0B2D751229004EEC89 /* Poppins-Light.ttf */; };
+		C3287A1A2D751229004EEC89 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A0C2D751229004EEC89 /* Poppins-Medium.ttf */; };
+		C3287A1E2D751229004EEC89 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A102D751229004EEC89 /* Fonts.swift */; };
+		C3287A212D751229004EEC89 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A132D751229004EEC89 /* Poppins-Regular.ttf */; };
+		C3287A232D751229004EEC89 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A152D751229004EEC89 /* Poppins-Bold.ttf */; };
+		C3287A242D751229004EEC89 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A162D751229004EEC89 /* Poppins-Black.ttf */; };
+		C3287A252D751229004EEC89 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3287A172D751229004EEC89 /* Poppins-SemiBold.ttf */; };
+		C3287A292D751694004EEC89 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A272D751694004EEC89 /* BrandCell.swift */; };
+		C3287A2A2D751694004EEC89 /* BrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3287A282D751694004EEC89 /* BrandCell.xib */; };
 		C36B444D2D74E8BB00E0BCC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B444C2D74E8BB00E0BCC5 /* AppDelegate.swift */; };
 		C36B44562D74E8BD00E0BCC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36B44552D74E8BD00E0BCC5 /* Assets.xcassets */; };
 		C36B44592D74E8BD00E0BCC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36B44572D74E8BD00E0BCC5 /* LaunchScreen.storyboard */; };
@@ -36,6 +48,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C3287A052D750695004EEC89 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C3287A072D750C48004EEC89 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		C3287A0B2D751229004EEC89 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		C3287A0C2D751229004EEC89 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C3287A102D751229004EEC89 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C3287A132D751229004EEC89 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		C3287A152D751229004EEC89 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		C3287A162D751229004EEC89 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		C3287A172D751229004EEC89 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		C3287A272D751694004EEC89 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		C3287A282D751694004EEC89 /* BrandCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandCell.xib; sourceTree = "<group>"; };
 		C36B44492D74E8BB00E0BCC5 /* CeretMobileTAsk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeretMobileTAsk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36B444C2D74E8BB00E0BCC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C36B44552D74E8BD00E0BCC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +101,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3287A042D750655004EEC89 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C3287A052D750695004EEC89 /* GradientView.swift */,
+				C3287A072D750C48004EEC89 /* SearchTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C3287A092D751229004EEC89 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C3287A102D751229004EEC89 /* Fonts.swift */,
+				C3287A0B2D751229004EEC89 /* Poppins-Light.ttf */,
+				C3287A0C2D751229004EEC89 /* Poppins-Medium.ttf */,
+				C3287A132D751229004EEC89 /* Poppins-Regular.ttf */,
+				C3287A152D751229004EEC89 /* Poppins-Bold.ttf */,
+				C3287A162D751229004EEC89 /* Poppins-Black.ttf */,
+				C3287A172D751229004EEC89 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C3287A262D75165C004EEC89 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3287A272D751694004EEC89 /* BrandCell.swift */,
+				C3287A282D751694004EEC89 /* BrandCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C36B44402D74E8BA00E0BCC5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +152,13 @@
 		C36B444B2D74E8BB00E0BCC5 /* CeretMobileTAsk */ = {
 			isa = PBXGroup;
 			children = (
-				C36B44E02D74ED7E00E0BCC5 /* Assets */,
-				C36B44DF2D74ED6600E0BCC5 /* Core */,
+				C3287A042D750655004EEC89 /* CustomView */,
 				C36B44732D74EB2700E0BCC5 /* Utilities */,
 				C36B44682D74EB2700E0BCC5 /* Extetntions */,
 				C36B44952D74EB2700E0BCC5 /* Network */,
 				C36B44E12D74EEE800E0BCC5 /* Scene */,
+				C36B44E02D74ED7E00E0BCC5 /* Assets */,
+				C36B44DF2D74ED6600E0BCC5 /* Core */,
 				C36B445A2D74E8BD00E0BCC5 /* Info.plist */,
 			);
 			path = CeretMobileTAsk;
@@ -124,6 +181,7 @@
 		C36B44732D74EB2700E0BCC5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C3287A092D751229004EEC89 /* Fonts */,
 				C36B44742D74EB2700E0BCC5 /* Constants.swift */,
 				C36B44772D74EB2700E0BCC5 /* AppCoordinator */,
 				C36B44792D74EB2700E0BCC5 /* Navigators */,
@@ -221,8 +279,10 @@
 		C36B44E22D74EEF400E0BCC5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C3287A262D75165C004EEC89 /* Cell */,
 				C36B44E32D74EF0800E0BCC5 /* HomeVC.swift */,
 				C36B44E42D74EF0800E0BCC5 /* HomeVC.xib */,
+				C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -297,8 +357,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36B44592D74E8BD00E0BCC5 /* LaunchScreen.storyboard in Resources */,
+				C3287A192D751229004EEC89 /* Poppins-Light.ttf in Resources */,
+				C3287A212D751229004EEC89 /* Poppins-Regular.ttf in Resources */,
 				C36B44E62D74EF0800E0BCC5 /* HomeVC.xib in Resources */,
+				C3287A252D751229004EEC89 /* Poppins-SemiBold.ttf in Resources */,
+				C3287A1A2D751229004EEC89 /* Poppins-Medium.ttf in Resources */,
+				C3287A242D751229004EEC89 /* Poppins-Black.ttf in Resources */,
+				C3287A232D751229004EEC89 /* Poppins-Bold.ttf in Resources */,
 				C36B44562D74E8BD00E0BCC5 /* Assets.xcassets in Resources */,
+				C3287A2A2D751694004EEC89 /* BrandCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,18 +377,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36B44B12D74EB2800E0BCC5 /* UIColor_Ext.swift in Sources */,
+				C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */,
 				C36B44B02D74EB2800E0BCC5 /* String_Ext.swift in Sources */,
 				C36B444D2D74E8BB00E0BCC5 /* AppDelegate.swift in Sources */,
+				C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */,
 				C36B44AC2D74EB2800E0BCC5 /* UITableView_Ext.swift in Sources */,
 				C36B44DB2D74EB2800E0BCC5 /* BaseRouter.swift in Sources */,
 				C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */,
 				C36B44AE2D74EB2800E0BCC5 /* UIviewController_Ext.swift in Sources */,
 				C36B44DA2D74EB2800E0BCC5 /* BaseClient.swift in Sources */,
+				C3287A1E2D751229004EEC89 /* Fonts.swift in Sources */,
 				C36B44AF2D74EB2800E0BCC5 /* UIView_Ext.swift in Sources */,
 				C36B44B42D74EB2800E0BCC5 /* Constants.swift in Sources */,
+				C3287A062D750695004EEC89 /* GradientView.swift in Sources */,
 				C36B44AD2D74EB2800E0BCC5 /* UICollectionView_Ext.swift in Sources */,
 				C36B44D22D74EB2800E0BCC5 /* AuthRouter.swift in Sources */,
 				C36B44CB2D74EB2800E0BCC5 /* Coordinator.swift in Sources */,
+				C3287A292D751694004EEC89 /* BrandCell.swift in Sources */,
 				C36B44B62D74EB2800E0BCC5 /* AppCoordinator.swift in Sources */,
 				C36B44E52D74EF0800E0BCC5 /* HomeVC.swift in Sources */,
 				C36B44D32D74EB2800E0BCC5 /* AuthClient.swift in Sources */,
