@@ -21,7 +21,7 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Here In Home Screen")
         view.setGradientBackground(firstColor: UIColor.gradiantOrange, secondColor: UIColor.gradiantOrange.withAlphaComponent(0), thirdColor: nil, startPoint: CGPoint(x: 0.5, y: 0.0), endPoint: CGPoint(x: 0.5, y: 1.0), location: [0.0, 1.0])
     }
 

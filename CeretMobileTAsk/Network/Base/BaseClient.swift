@@ -9,30 +9,6 @@ import UIKit
 import Alamofire
 import Combine
 
-class CustomInterceptor:RequestInterceptor{
-    private let retryLimit = 3
-    func retry(_ request: Request, for session: Session, dueTo error: Error, completion: @escaping (RetryResult) -> Void) {
-        if let statusCode = request.response?.statusCode
-            ,statusCode == 401,request.retryCount < retryLimit {
-            handelAuth()
-        }
-        else{
-            completion(.doNotRetry)
-        }
-    }
-
-    private func handelAuth(){
-        KeyChainHelper.standard.delete(service: Constants.service.rawValue, account: Constants.account.rawValue)
-        DispatchQueue.main.async {
-            let delegate = UIApplication.shared.delegate as? AppDelegate
-            let navVC = UINavigationController(rootViewController:LoginVC.loadController())
-            navVC.navigationBar.isHidden = true
-            delegate?.window?.rootViewController = navVC
-            delegate?.appCoordinator.start()
-        }
-    }
-}
-
 enum NetworkError: Error, LocalizedError {
     case noData
     case other(String)
@@ -55,7 +31,7 @@ enum NetworkError: Error, LocalizedError {
     }
 }
 protocol NetworkHandler {
-    func performRequest(route: URLRequestConvertible,interceptor:RequestInterceptor) async throws -> AFDataResponse<Data?>
+    func performRequest(route: URLRequestConvertible,interceptor:RequestInterceptor?) async throws -> AFDataResponse<Data?>
     func uploadRequest(multiPart: MultipartFormData, route: URLRequestConvertible) async throws -> AFDataResponse<Data?>
 }
 
@@ -66,10 +42,10 @@ protocol ResponseParser {
 }
 class DefaultResponseParser: ResponseParser {
     func parseResponse<T: Decodable>(_ response: AFDataResponse<Data?>, with decoder: JSONDecoder) throws -> Result<T, NetworkError> {
-        print(response.response?.statusCode)
+        print(response.response?.statusCode ?? "")
        
         guard let data = response.data else {
-            print(response.response.debugDescription,"Body:\(String(data: response.request?.httpBody ?? Data(), encoding: .utf8))")
+            print(response.response.debugDescription,"Body:\(String(data: response.request?.httpBody ?? Data(), encoding: .utf8) ?? "")")
             
             return .failure(.noData)
         }
@@ -90,12 +66,9 @@ class DefaultResponseParser: ResponseParser {
                     let dataJson = try decoder.decode(T.self, from: data)
                     return .success(dataJson)
                 }
-            } else if statusCode == 400 || statusCode == 422 {
-                let errorResponse = try decoder.decode(ErrorResponse.self, from: data)
-                return .failure(.badRequest(errorResponse.message))
-            } else {
+            }  else {
 
-                return .failure(.other("Unknown server error\(statusCode) \("Response")\(response.response.debugDescription) \(String(data: response.data ?? Data(), encoding: .utf8))"))
+                return .failure(.other("Unknown server error\(statusCode) \("Response")\(response.response.debugDescription) \(String(data: response.data ?? Data(), encoding: .utf8) ?? "")"))
             }
         } catch {
             print(error)
@@ -121,7 +94,7 @@ extension Optional: OptionalDecodable {
 
 
 class NetworkManager: NetworkHandler {
-    func performRequest(route: Alamofire.URLRequestConvertible, interceptor:RequestInterceptor) async throws -> Alamofire.AFDataResponse<Data?> {
+    func performRequest(route: Alamofire.URLRequestConvertible, interceptor:RequestInterceptor?) async throws -> Alamofire.AFDataResponse<Data?> {
         return try await withCheckedThrowingContinuation { continuation in
             AF.request(route,interceptor: interceptor).response { response in
                 continuation.resume(returning: response)
@@ -148,7 +121,7 @@ class BaseClient {
     }
      func performRequest<T: Decodable>(route: URLRequestConvertible, decoder: JSONDecoder = JSONDecoder()) async throws -> Result<T, NetworkError> {
         do {
-            let response = try await networkHandler.performRequest(route: route,interceptor: CustomInterceptor())
+            let response = try await networkHandler.performRequest(route: route, interceptor: nil)
             return try responseParser.parseResponse(response, with: decoder)
         } catch {
             return .failure(.other(error.localizedDescription))

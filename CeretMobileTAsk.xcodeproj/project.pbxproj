@@ -26,8 +26,6 @@
 		C36B44CB2D74EB2800E0BCC5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44912D74EB2700E0BCC5 /* Coordinator.swift */; };
 		C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44922D74EB2700E0BCC5 /* Navigator.swift */; };
 		C36B44CD2D74EB2800E0BCC5 /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44942D74EB2700E0BCC5 /* BaseWireFrame.swift */; };
-		C36B44CE2D74EB2800E0BCC5 /* AttendanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44972D74EB2700E0BCC5 /* AttendanceRouter.swift */; };
-		C36B44CF2D74EB2800E0BCC5 /* AttendanceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44982D74EB2700E0BCC5 /* AttendanceClient.swift */; };
 		C36B44D22D74EB2800E0BCC5 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449D2D74EB2700E0BCC5 /* AuthRouter.swift */; };
 		C36B44D32D74EB2800E0BCC5 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449E2D74EB2700E0BCC5 /* AuthClient.swift */; };
 		C36B44DA2D74EB2800E0BCC5 /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44A92D74EB2700E0BCC5 /* BaseClient.swift */; };
@@ -56,8 +54,6 @@
 		C36B44912D74EB2700E0BCC5 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C36B44922D74EB2700E0BCC5 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		C36B44942D74EB2700E0BCC5 /* BaseWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
-		C36B44972D74EB2700E0BCC5 /* AttendanceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceRouter.swift; sourceTree = "<group>"; };
-		C36B44982D74EB2700E0BCC5 /* AttendanceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceClient.swift; sourceTree = "<group>"; };
 		C36B449D2D74EB2700E0BCC5 /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		C36B449E2D74EB2700E0BCC5 /* AuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		C36B44A92D74EB2700E0BCC5 /* BaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClient.swift; sourceTree = "<group>"; };
@@ -173,20 +169,10 @@
 		C36B44952D74EB2700E0BCC5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C36B44962D74EB2700E0BCC5 /* Attendance */,
 				C36B449C2D74EB2700E0BCC5 /* Auth */,
 				C36B44A82D74EB2700E0BCC5 /* Base */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		C36B44962D74EB2700E0BCC5 /* Attendance */ = {
-			isa = PBXGroup;
-			children = (
-				C36B44972D74EB2700E0BCC5 /* AttendanceRouter.swift */,
-				C36B44982D74EB2700E0BCC5 /* AttendanceClient.swift */,
-			);
-			path = Attendance;
 			sourceTree = "<group>";
 		};
 		C36B449C2D74EB2700E0BCC5 /* Auth */ = {
@@ -327,13 +313,11 @@
 				C36B44B02D74EB2800E0BCC5 /* String_Ext.swift in Sources */,
 				C36B444D2D74E8BB00E0BCC5 /* AppDelegate.swift in Sources */,
 				C36B44AC2D74EB2800E0BCC5 /* UITableView_Ext.swift in Sources */,
-				C36B44CE2D74EB2800E0BCC5 /* AttendanceRouter.swift in Sources */,
 				C36B44DB2D74EB2800E0BCC5 /* BaseRouter.swift in Sources */,
 				C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */,
 				C36B44AE2D74EB2800E0BCC5 /* UIviewController_Ext.swift in Sources */,
 				C36B44DA2D74EB2800E0BCC5 /* BaseClient.swift in Sources */,
 				C36B44AF2D74EB2800E0BCC5 /* UIView_Ext.swift in Sources */,
-				C36B44CF2D74EB2800E0BCC5 /* AttendanceClient.swift in Sources */,
 				C36B44B42D74EB2800E0BCC5 /* Constants.swift in Sources */,
 				C36B44AD2D74EB2800E0BCC5 /* UICollectionView_Ext.swift in Sources */,
 				C36B44D22D74EB2800E0BCC5 /* AuthRouter.swift in Sources */,
