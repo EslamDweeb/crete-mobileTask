@@ -8,14 +8,14 @@
 import UIKit
 import Kingfisher
 protocol ModelCellViewModel{
-    func configure(imageURL:String,modelName:String,modelPrice:String,modelYear:String,isGrid:Bool)
+    func configure(imageURL:String,modelName:String,startFrom:String,modelYear:String,isGrid:Bool)
 }
 class ModelCell: UICollectionViewCell,ModelCellViewModel {
     
     
 
     @IBOutlet weak var brandModelImageHieghtConstraint: NSLayoutConstraint!
-    @IBOutlet weak var modelPriceLbl: UILabel!
+    @IBOutlet weak var startFromLbl: UILabel!
     @IBOutlet weak var modelYearLbl: UILabel!
     @IBOutlet weak var modelNameLbl: UILabel!
     @IBOutlet weak var brandModelImage: UIImageView!
@@ -25,11 +25,11 @@ class ModelCell: UICollectionViewCell,ModelCellViewModel {
         super.awakeFromNib()
         // Initialization code
     }
-    func configure(imageURL: String, modelName: String, modelPrice: String, modelYear: String,isGrid:Bool) {
+    func configure(imageURL: String, modelName: String, startFrom: String, modelYear: String,isGrid:Bool) {
         brandModelImage.kf.setImage(with: URL(string: imageURL))
         modelNameLbl.text = modelName
         modelYearLbl.text = modelYear
-        modelPriceLbl.text = modelPrice
+        startFromLbl.text = startFrom
         if isGrid {
             containerStack.axis = .vertical
             brandModelImageHieghtConstraint.constant = 75

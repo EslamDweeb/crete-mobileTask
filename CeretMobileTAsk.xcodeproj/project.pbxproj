@@ -27,6 +27,18 @@
 		C31E05E62D75DC2200668321 /* DefaultModelRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E52D75DC2200668321 /* DefaultModelRepo.swift */; };
 		C31E05E92D75E3CC00668321 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E72D75E3CC00668321 /* AdCell.swift */; };
 		C31E05EA2D75E3CC00668321 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31E05E82D75E3CC00668321 /* AdCell.xib */; };
+		C31E05EE2D7643E700668321 /* ModelGenerationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05EC2D7643E700668321 /* ModelGenerationVC.swift */; };
+		C31E05EF2D7643E700668321 /* ModelGenerationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31E05ED2D7643E700668321 /* ModelGenerationVC.xib */; };
+		C31E05F12D7643FB00668321 /* ModelGenerationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F02D7643FB00668321 /* ModelGenerationsViewModel.swift */; };
+		C31E05F32D7644B800668321 /* ModelGenerationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F22D7644B700668321 /* ModelGenerationRepo.swift */; };
+		C31E05F52D76452D00668321 /* DefaultModelGenerationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F42D76452D00668321 /* DefaultModelGenerationRepo.swift */; };
+		C31E05F72D7645A400668321 /* VehiclesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F62D7645A400668321 /* VehiclesResponseDTO.swift */; };
+		C31E05FA2D76460C00668321 /* ModelGenerationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F92D76460C00668321 /* ModelGenerationsRouter.swift */; };
+		C31E05FC2D76461900668321 /* ModelGenerationsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FB2D76461900668321 /* ModelGenerationsClient.swift */; };
+		C31E05FE2D76476600668321 /* Vechile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FD2D76476600668321 /* Vechile.swift */; };
+		C31E06002D76525400668321 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FF2D76525400668321 /* TableHeaderView.swift */; };
+		C31E06032D765BB300668321 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E06012D765BB300668321 /* VehicleCell.swift */; };
+		C31E06042D765BB300668321 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31E06022D765BB300668321 /* VehicleCell.xib */; };
 		C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */; };
 		C3287A062D750695004EEC89 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A052D750695004EEC89 /* GradientView.swift */; };
 		C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A072D750C48004EEC89 /* SearchTextField.swift */; };
@@ -87,6 +99,18 @@
 		C31E05E52D75DC2200668321 /* DefaultModelRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModelRepo.swift; sourceTree = "<group>"; };
 		C31E05E72D75E3CC00668321 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
 		C31E05E82D75E3CC00668321 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
+		C31E05EC2D7643E700668321 /* ModelGenerationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationVC.swift; sourceTree = "<group>"; };
+		C31E05ED2D7643E700668321 /* ModelGenerationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelGenerationVC.xib; sourceTree = "<group>"; };
+		C31E05F02D7643FB00668321 /* ModelGenerationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationsViewModel.swift; sourceTree = "<group>"; };
+		C31E05F22D7644B700668321 /* ModelGenerationRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationRepo.swift; sourceTree = "<group>"; };
+		C31E05F42D76452D00668321 /* DefaultModelGenerationRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModelGenerationRepo.swift; sourceTree = "<group>"; };
+		C31E05F62D7645A400668321 /* VehiclesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesResponseDTO.swift; sourceTree = "<group>"; };
+		C31E05F92D76460C00668321 /* ModelGenerationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationsRouter.swift; sourceTree = "<group>"; };
+		C31E05FB2D76461900668321 /* ModelGenerationsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationsClient.swift; sourceTree = "<group>"; };
+		C31E05FD2D76476600668321 /* Vechile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vechile.swift; sourceTree = "<group>"; };
+		C31E05FF2D76525400668321 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		C31E06012D765BB300668321 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		C31E06022D765BB300668321 /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
 		C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3287A052D750695004EEC89 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C3287A072D750C48004EEC89 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -157,6 +181,7 @@
 				C31E05DA2D75D83D00668321 /* Ads.swift */,
 				C31E05DC2D75D86D00668321 /* AttributeHint.swift */,
 				C31E05E32D75DA8800668321 /* Car.swift */,
+				C31E05FD2D76476600668321 /* Vechile.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -166,6 +191,7 @@
 			children = (
 				C3034AA32D751E6300EE3076 /* HomeRepo.swift */,
 				C31E05D82D75D81A00668321 /* ModelsRepo.swift */,
+				C31E05F22D7644B700668321 /* ModelGenerationRepo.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -184,6 +210,7 @@
 			children = (
 				C3034A9F2D751DF900EE3076 /* DefaultHomeRepo.swift */,
 				C31E05E52D75DC2200668321 /* DefaultModelRepo.swift */,
+				C31E05F42D76452D00668321 /* DefaultModelGenerationRepo.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -224,8 +251,31 @@
 			children = (
 				C31E05DF2D75D8BB00668321 /* ToDomain.swift */,
 				C31E05E12D75D8D200668321 /* BrandModelsDTO.swift */,
+				C31E05F62D7645A400668321 /* VehiclesResponseDTO.swift */,
 			);
 			path = ResponseDTO;
+			sourceTree = "<group>";
+		};
+		C31E05EB2D763D0B00668321 /* ModelGenerations */ = {
+			isa = PBXGroup;
+			children = (
+				C31E05EC2D7643E700668321 /* ModelGenerationVC.swift */,
+				C31E05ED2D7643E700668321 /* ModelGenerationVC.xib */,
+				C31E05F02D7643FB00668321 /* ModelGenerationsViewModel.swift */,
+				C31E05FF2D76525400668321 /* TableHeaderView.swift */,
+				C31E06012D765BB300668321 /* VehicleCell.swift */,
+				C31E06022D765BB300668321 /* VehicleCell.xib */,
+			);
+			path = ModelGenerations;
+			sourceTree = "<group>";
+		};
+		C31E05F82D7645E600668321 /* ModelGenerations */ = {
+			isa = PBXGroup;
+			children = (
+				C31E05F92D76460C00668321 /* ModelGenerationsRouter.swift */,
+				C31E05FB2D76461900668321 /* ModelGenerationsClient.swift */,
+			);
+			path = ModelGenerations;
 			sourceTree = "<group>";
 		};
 		C3287A042D750655004EEC89 /* CustomView */ = {
@@ -356,6 +406,7 @@
 		C36B44952D74EB2700E0BCC5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C31E05F82D7645E600668321 /* ModelGenerations */,
 				C31E05D32D75D57100668321 /* Models */,
 				C36B449C2D74EB2700E0BCC5 /* Home */,
 				C36B44A82D74EB2700E0BCC5 /* Base */,
@@ -401,6 +452,7 @@
 		C36B44E12D74EEE800E0BCC5 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				C31E05EB2D763D0B00668321 /* ModelGenerations */,
 				C31E05C72D75CD4F00668321 /* Models */,
 				C36B44E22D74EEF400E0BCC5 /* Home */,
 			);
@@ -495,6 +547,8 @@
 				C3287A212D751229004EEC89 /* Poppins-Regular.ttf in Resources */,
 				C31E05EA2D75E3CC00668321 /* AdCell.xib in Resources */,
 				C36B44E62D74EF0800E0BCC5 /* HomeVC.xib in Resources */,
+				C31E06042D765BB300668321 /* VehicleCell.xib in Resources */,
+				C31E05EF2D7643E700668321 /* ModelGenerationVC.xib in Resources */,
 				C3287A252D751229004EEC89 /* Poppins-SemiBold.ttf in Resources */,
 				C3287A1A2D751229004EEC89 /* Poppins-Medium.ttf in Resources */,
 				C31E05CC2D75CD7A00668321 /* ModelCell.xib in Resources */,
@@ -512,16 +566,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C31E06032D765BB300668321 /* VehicleCell.swift in Sources */,
 				C36B44B12D74EB2800E0BCC5 /* UIColor_Ext.swift in Sources */,
 				C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */,
 				C36B44B02D74EB2800E0BCC5 /* String_Ext.swift in Sources */,
 				C36B444D2D74E8BB00E0BCC5 /* AppDelegate.swift in Sources */,
 				C31E05E92D75E3CC00668321 /* AdCell.swift in Sources */,
 				C31E05D22D75CDB300668321 /* ModelsViewModel.swift in Sources */,
+				C31E06002D76525400668321 /* TableHeaderView.swift in Sources */,
 				C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */,
 				C31E05CF2D75CD9C00668321 /* ModelsVC.swift in Sources */,
+				C31E05FE2D76476600668321 /* Vechile.swift in Sources */,
 				C36B44AC2D74EB2800E0BCC5 /* UITableView_Ext.swift in Sources */,
 				C31E05D52D75D58200668321 /* ModelsRouter.swift in Sources */,
+				C31E05FA2D76460C00668321 /* ModelGenerationsRouter.swift in Sources */,
 				C36B44DB2D74EB2800E0BCC5 /* BaseRouter.swift in Sources */,
 				C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */,
 				C3034A9D2D751DAE00EE3076 /* BrandResponse.swift in Sources */,
@@ -534,6 +592,9 @@
 				C31E05DD2D75D86D00668321 /* AttributeHint.swift in Sources */,
 				C31E05D92D75D81A00668321 /* ModelsRepo.swift in Sources */,
 				C31E05DB2D75D83D00668321 /* Ads.swift in Sources */,
+				C31E05F12D7643FB00668321 /* ModelGenerationsViewModel.swift in Sources */,
+				C31E05EE2D7643E700668321 /* ModelGenerationVC.swift in Sources */,
+				C31E05F72D7645A400668321 /* VehiclesResponseDTO.swift in Sources */,
 				C3034AA42D751E6300EE3076 /* HomeRepo.swift in Sources */,
 				C36B44AF2D74EB2800E0BCC5 /* UIView_Ext.swift in Sources */,
 				C31E05E62D75DC2200668321 /* DefaultModelRepo.swift in Sources */,
@@ -544,9 +605,12 @@
 				C36B44D22D74EB2800E0BCC5 /* HomeRouter.swift in Sources */,
 				C31E05CB2D75CD7A00668321 /* ModelCell.swift in Sources */,
 				C36B44CB2D74EB2800E0BCC5 /* Coordinator.swift in Sources */,
+				C31E05F52D76452D00668321 /* DefaultModelGenerationRepo.swift in Sources */,
+				C31E05FC2D76461900668321 /* ModelGenerationsClient.swift in Sources */,
 				C3287A292D751694004EEC89 /* BrandCell.swift in Sources */,
 				C36B44B62D74EB2800E0BCC5 /* AppCoordinator.swift in Sources */,
 				C31E05E22D75D8D200668321 /* BrandModelsDTO.swift in Sources */,
+				C31E05F32D7644B800668321 /* ModelGenerationRepo.swift in Sources */,
 				C36B44E52D74EF0800E0BCC5 /* HomeVC.swift in Sources */,
 				C36B44D32D74EB2800E0BCC5 /* HomeClient.swift in Sources */,
 				C36B44B72D74EB2800E0BCC5 /* MainNavigator.swift in Sources */,

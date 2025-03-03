@@ -14,7 +14,7 @@ class ModelsViewModel:ViewModel {
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
     
     var isGrid:BehaviorRelay<Bool> = .init(value: false)
-    var brandImageURLSubject:PublishSubject<String> = .init()
+   
     
     var models: BehaviorRelay<[Car]> = .init(value: [])
     var ads: BehaviorRelay<[Ad]> = .init(value: [])
@@ -23,7 +23,7 @@ class ModelsViewModel:ViewModel {
         isGrid.value == false ? (models.value.count + ads.value.count): models.value.count
     }
     
-    private var brandImageURL:String
+    var brandImageURL:String
     private var brandId:Int
     private var modelsRepo: ModelsRepo
     var currentPage = 1
@@ -34,7 +34,6 @@ class ModelsViewModel:ViewModel {
     }
     
     func viewDidload(){
-        brandImageURLSubject.onNext(brandImageURL)
         Task {
             await getModels()
         }
@@ -58,6 +57,6 @@ class ModelsViewModel:ViewModel {
     func configureCarCell(_ cell: ModelCellViewModel,item:Int){
         let index = item >= 2 ? (item - 1) : item
         let item = models.value[index]
-        cell.configure(imageURL: item.image, modelName: item.name, modelPrice: "\(item.price)", modelYear: item.ModelYear, isGrid: isGrid.value)
+        cell.configure(imageURL: item.image, modelName: item.name, startFrom: "\(item.startFrom)", modelYear: item.ModelYear, isGrid: isGrid.value)
     }
 }

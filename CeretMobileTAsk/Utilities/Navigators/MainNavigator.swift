@@ -14,6 +14,7 @@ class MainNavigator:Navigator{
     
     enum Destination {
         case models(id:Int,imageURL:String)
+        case modelGeneration(brandImageURL: String, model: Car)
        
     }
     
@@ -26,8 +27,9 @@ class MainNavigator:Navigator{
         case .models(let id,let imageURL):
             let viewModel = ModelsViewModel(modelsRepo: DefaultModelRepo(client: ModelsClient()), brandId: id, brandImageURL: imageURL)
             return ModelsVC(viewModel: viewModel, coordinator: coordinator)
-
-       
+        case .modelGeneration(let brandImageURL,let model):
+            let viewModel = ModelGenerationsViewModel(brandImageURL: brandImageURL, modelGenerationsRepo: DefaultModelGenerationRepo(client: ModelGenerationsClient()), model: model)
+            return ModelGenerationVC(viewModel: viewModel, coordinator: coordinator)
         }
     }
 }
