@@ -6,15 +6,22 @@
 //
 
 import UIKit
-
-class BrandCell: UICollectionViewCell {
+import Kingfisher
+protocol BrandCellViewModel{
+    func Configure(name:String,imageURL:String)
+}
+class BrandCell: UICollectionViewCell,BrandCellViewModel {
 
     @IBOutlet weak var brandNameLbl: UILabel!
-    @IBOutlet weak var BrandImageView: UIImageView!
+    @IBOutlet weak var brandImageView: UIImageView!
     @IBOutlet weak var containerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    func Configure(name:String,imageURL:String){
+        brandNameLbl.text = name
+        brandImageView.kf.setImage(with: URL(string: imageURL))
+    }
 }

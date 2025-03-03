@@ -19,7 +19,7 @@ class AppCoordinator:Coordinator{
     
     
     lazy var homeScreen: UIViewController = {
-        let homeVC = HomeVC(viewModel: HomeViewModel(), coordinator: self)
+        let homeVC = HomeVC(viewModel: HomeViewModel(homerepo: DefaultHomeRepo(client: HomeClient())), coordinator: self)
         let navigationController = UINavigationController(rootViewController: homeVC)
         navigationController.navigationBar.isHidden = true
         return navigationController

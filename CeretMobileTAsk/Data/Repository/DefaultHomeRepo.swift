@@ -11,16 +11,16 @@ class DefaultHomeRepo:HomeRepo {
     init(client:HomeClient) {
         self.client = client
     }
-    func getLeadsStatus() async throws -> [LeadsStatus] {
-        let result: Result<BaseDTO<[LeadsStatusDTO]>, NetworkError>
+    func  getBrands(categoryId:Int) async throws -> [Brand] {
+        let result: Result<BrandResponse, NetworkError>
         do {
-            result = try await client.getLeadsStatus()
+            result = try await client.getBrands(categoryId: categoryId)
         } catch {
             throw error
         }
         switch result {
         case .success(let success):
-            return success.data.map({$0.toDomain()})
+            return success.data
         case .failure(let failure):
             print(failure)
             throw failure

@@ -8,16 +8,15 @@
 import Foundation
 import Alamofire
 
-enum AuthRouter:TargetType {
-    
-    case login(email:String,password:String)
-    case logout(fcm:String)
+enum HomeRouter:TargetType {
+    case getBrand(category:Int)
+   
     
         
     var queryies: [URLQueryItem]? {
         switch self {
-        default:
-            return nil
+        case.getBrand(let id):
+            return [.init(name: "category", value: "\(id)")]
         }
     }
     
@@ -30,32 +29,21 @@ enum AuthRouter:TargetType {
     
     var path: String {
         switch self {
-        case .login:
-            return "/user/login"
-        case .logout:
-            return "/user/logout"
+        case .getBrand:
+            return "brands"
+       
         }
     }
     
     var method: HTTPMethod {
         switch self {
         default:
-            return .post
+            return .get
         }
     }
     
     var parameters: Parameters?{
-        switch self {
-        case .login(let email,let password):
-            var dic:Parameters = [
-                "email":email,
-                "password":password,
-            ]
-           
-            return dic
-        case .logout(let fcm):
-            return ["firebase_token":fcm]
-        }
+       return nil
     }
     
     var DataDic: Codable?{

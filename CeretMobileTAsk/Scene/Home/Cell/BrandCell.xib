@@ -78,7 +78,7 @@
             </constraints>
             <size key="customSize" width="71" height="66"/>
             <connections>
-                <outlet property="BrandImageView" destination="5Hb-CL-Erf" id="5K8-6C-b7D"/>
+                <outlet property="brandImageView" destination="5Hb-CL-Erf" id="5K8-6C-b7D"/>
                 <outlet property="brandNameLbl" destination="mdd-ME-R6Q" id="eCV-Ux-PhS"/>
                 <outlet property="containerView" destination="Auk-yl-QvP" id="NIj-hE-adF"/>
             </connections>

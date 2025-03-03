@@ -6,3 +6,6 @@
 //
 
 import Foundation
+protocol HomeRepo{
+    func getBrands(categoryId:Int) async throws -> [Brand]
+}

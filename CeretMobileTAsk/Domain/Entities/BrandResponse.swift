@@ -6,3 +6,12 @@
 //
 
 import Foundation
+struct BrandResponse: Codable {
+    let data: [Brand]
+}
+
+struct Brand: Codable {
+    let id: Int
+    let name: String
+    let image: String
+}

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeVC: BaseWireFrame<HomeViewModel> {
     
@@ -20,6 +22,7 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        viewModel.viewDidload()
     }
     
     fileprivate func setupUI() {
@@ -29,7 +32,7 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
         brandCollectionView.registerCell(cellClass: BrandCell.self)
         let layout = createCompositionalLayout()
         brandCollectionView.setCollectionViewLayout(layout, animated: false)
-        brandCollectionView.dataSource = self
+        //brandCollectionView.dataSource = self
     }
     private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
            // Define the item size
@@ -56,19 +59,60 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
            return layout
        }
     override func bind(viewModel: HomeViewModel) {
-        print("Here In Home Screen")
+        viewModel.isLoading.subscribe {[weak self] loading in
+            guard let self else{return}
+            guard let isLoading = loading.element else{return}
+            if isLoading{
+                DispatchQueue.main.async {
+                    self.showIndicator(withTitle: "", and: "")
+                }
+            }else{
+                DispatchQueue.main.async {
+                    self.hideIndicator()
+                }
+            }
+        }.disposed(by: disposeBag)
+        
+        viewModel.hasErrInTxt.subscribe {[weak self] msg in
+            guard let self,let msg = msg.element else{return}
+            if msg != "" {
+                DispatchQueue.main.async {
+                    self.createAlert(title: "Error",erroMessage: msg)
+                }
+            }
+        }.disposed(by: disposeBag)
+        searchField.rx.text.orEmpty
+                    .bind(to: viewModel.searchText)
+                    .disposed(by: disposeBag)
+        
+        viewModel.filteredBrands
+                 .bind(to: brandCollectionView.rx.items(cellIdentifier: BrandCell.getIdentifier(), cellType: BrandCell.self)) { index, brand, cell in
+                     //cell.configure(with: brand)
+                    
+                     cell.Configure(name:  brand.name, imageURL:  brand.image)
+                 }
+                 .disposed(by: disposeBag)
+
+             // Handle item selection
+             brandCollectionView.rx.itemSelected
+                 .subscribe(onNext: { [weak self] indexPath in
+                     guard let self = self else { return }
+                     let selectedBrand = self.viewModel.filteredBrands.value[indexPath.item]
+                     print("Selected brand: \(selectedBrand.name)")
+                 })
+                 .disposed(by: disposeBag)
     }
 
 }
-extension HomeVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarBrandCell.reuseIdentifier, for: indexPath) as! CarBrandCell
-//        cell.configure(with: carBrands[indexPath.item])
-        let cell = collectionView.dequeue(indexPath: indexPath) as BrandCell
-        return cell
-    }
-}
+//extension HomeVC: UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 30
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+////        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarBrandCell.reuseIdentifier, for: indexPath) as! CarBrandCell
+////        cell.configure(with: carBrands[indexPath.item])
+//        let cell = collectionView.dequeue(indexPath: indexPath) as BrandCell
+//        return cell
+//    }
+//}

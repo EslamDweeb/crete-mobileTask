@@ -10,12 +10,10 @@ import Foundation
 import Alamofire
 
 
-class AuthClient:BaseClient {
+class HomeClient:BaseClient {
     
-     func login<T:Decodable>(email:String,password:String) async throws -> Result<T, NetworkError>  {
-        return try await performRequest(route: AuthRouter.login(email: email, password: password))
+     func getBrands<T:Decodable>(categoryId:Int) async throws -> Result<T, NetworkError>  {
+         return try await performRequest(route: HomeRouter.getBrand(category: categoryId))
     }
-    func logout<T:Decodable>(fcmToken:String) async throws -> Result<T, NetworkError>  {
-       return try await performRequest(route: AuthRouter.logout(fcm: fcmToken))
-   }
+   
 }

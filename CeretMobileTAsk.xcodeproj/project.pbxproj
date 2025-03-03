@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3034A9D2D751DAE00EE3076 /* BrandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3034A9C2D751DAE00EE3076 /* BrandResponse.swift */; };
+		C3034AA02D751DF900EE3076 /* DefaultHomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3034A9F2D751DF900EE3076 /* DefaultHomeRepo.swift */; };
+		C3034AA42D751E6300EE3076 /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3034AA32D751E6300EE3076 /* HomeRepo.swift */; };
+		C3034AA72D7523C500EE3076 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3034AA62D7523C500EE3076 /* Kingfisher */; };
 		C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */; };
 		C3287A062D750695004EEC89 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A052D750695004EEC89 /* GradientView.swift */; };
 		C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A072D750C48004EEC89 /* SearchTextField.swift */; };
@@ -38,8 +42,8 @@
 		C36B44CB2D74EB2800E0BCC5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44912D74EB2700E0BCC5 /* Coordinator.swift */; };
 		C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44922D74EB2700E0BCC5 /* Navigator.swift */; };
 		C36B44CD2D74EB2800E0BCC5 /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44942D74EB2700E0BCC5 /* BaseWireFrame.swift */; };
-		C36B44D22D74EB2800E0BCC5 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449D2D74EB2700E0BCC5 /* AuthRouter.swift */; };
-		C36B44D32D74EB2800E0BCC5 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449E2D74EB2700E0BCC5 /* AuthClient.swift */; };
+		C36B44D22D74EB2800E0BCC5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449D2D74EB2700E0BCC5 /* HomeRouter.swift */; };
+		C36B44D32D74EB2800E0BCC5 /* HomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B449E2D74EB2700E0BCC5 /* HomeClient.swift */; };
 		C36B44DA2D74EB2800E0BCC5 /* BaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44A92D74EB2700E0BCC5 /* BaseClient.swift */; };
 		C36B44DB2D74EB2800E0BCC5 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44AA2D74EB2700E0BCC5 /* BaseRouter.swift */; };
 		C36B44DE2D74EBD200E0BCC5 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = C36B44DD2D74EBD200E0BCC5 /* MBProgressHUD */; };
@@ -48,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3034A9C2D751DAE00EE3076 /* BrandResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandResponse.swift; sourceTree = "<group>"; };
+		C3034A9F2D751DF900EE3076 /* DefaultHomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeRepo.swift; sourceTree = "<group>"; };
+		C3034AA32D751E6300EE3076 /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
 		C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3287A052D750695004EEC89 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C3287A072D750C48004EEC89 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -78,8 +85,8 @@
 		C36B44912D74EB2700E0BCC5 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C36B44922D74EB2700E0BCC5 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		C36B44942D74EB2700E0BCC5 /* BaseWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
-		C36B449D2D74EB2700E0BCC5 /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
-		C36B449E2D74EB2700E0BCC5 /* AuthClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		C36B449D2D74EB2700E0BCC5 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C36B449E2D74EB2700E0BCC5 /* HomeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeClient.swift; sourceTree = "<group>"; };
 		C36B44A92D74EB2700E0BCC5 /* BaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClient.swift; sourceTree = "<group>"; };
 		C36B44AA2D74EB2700E0BCC5 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		C36B44E32D74EF0800E0BCC5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -95,12 +102,54 @@
 				C36B44652D74EAE200E0BCC5 /* RxCocoa in Frameworks */,
 				C36B44DE2D74EBD200E0BCC5 /* MBProgressHUD in Frameworks */,
 				C36B44622D74EAC400E0BCC5 /* Alamofire in Frameworks */,
+				C3034AA72D7523C500EE3076 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3034A9A2D751D8400EE3076 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C3034A9E2D751DCA00EE3076 /* Repository */,
+				C3034A9B2D751D9C00EE3076 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C3034A9B2D751D9C00EE3076 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C3034A9C2D751DAE00EE3076 /* BrandResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C3034A9E2D751DCA00EE3076 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C3034AA32D751E6300EE3076 /* HomeRepo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C3034AA12D751E0600EE3076 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3034AA22D751E2200EE3076 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C3034AA22D751E2200EE3076 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C3034A9F2D751DF900EE3076 /* DefaultHomeRepo.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		C3287A042D750655004EEC89 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +205,8 @@
 				C36B44732D74EB2700E0BCC5 /* Utilities */,
 				C36B44682D74EB2700E0BCC5 /* Extetntions */,
 				C36B44952D74EB2700E0BCC5 /* Network */,
+				C3034AA12D751E0600EE3076 /* Data */,
+				C3034A9A2D751D8400EE3076 /* Domain */,
 				C36B44E12D74EEE800E0BCC5 /* Scene */,
 				C36B44E02D74ED7E00E0BCC5 /* Assets */,
 				C36B44DF2D74ED6600E0BCC5 /* Core */,
@@ -227,19 +278,19 @@
 		C36B44952D74EB2700E0BCC5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C36B449C2D74EB2700E0BCC5 /* Auth */,
+				C36B449C2D74EB2700E0BCC5 /* Home */,
 				C36B44A82D74EB2700E0BCC5 /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		C36B449C2D74EB2700E0BCC5 /* Auth */ = {
+		C36B449C2D74EB2700E0BCC5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C36B449D2D74EB2700E0BCC5 /* AuthRouter.swift */,
-				C36B449E2D74EB2700E0BCC5 /* AuthClient.swift */,
+				C36B449D2D74EB2700E0BCC5 /* HomeRouter.swift */,
+				C36B449E2D74EB2700E0BCC5 /* HomeClient.swift */,
 			);
-			path = Auth;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C36B44A82D74EB2700E0BCC5 /* Base */ = {
@@ -308,6 +359,7 @@
 				C36B44642D74EAE200E0BCC5 /* RxCocoa */,
 				C36B44662D74EAE200E0BCC5 /* RxSwift */,
 				C36B44DD2D74EBD200E0BCC5 /* MBProgressHUD */,
+				C3034AA62D7523C500EE3076 /* Kingfisher */,
 			);
 			productName = CeretMobileTAsk;
 			productReference = C36B44492D74E8BB00E0BCC5 /* CeretMobileTAsk.app */;
@@ -341,6 +393,7 @@
 				C36B44602D74EAC300E0BCC5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C36B44632D74EAE200E0BCC5 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				C36B44DC2D74EBD200E0BCC5 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				C3034AA52D7523C500EE3076 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C36B444A2D74E8BB00E0BCC5 /* Products */;
 			projectDirPath = "";
@@ -384,19 +437,22 @@
 				C36B44AC2D74EB2800E0BCC5 /* UITableView_Ext.swift in Sources */,
 				C36B44DB2D74EB2800E0BCC5 /* BaseRouter.swift in Sources */,
 				C36B44CC2D74EB2800E0BCC5 /* Navigator.swift in Sources */,
+				C3034A9D2D751DAE00EE3076 /* BrandResponse.swift in Sources */,
 				C36B44AE2D74EB2800E0BCC5 /* UIviewController_Ext.swift in Sources */,
+				C3034AA02D751DF900EE3076 /* DefaultHomeRepo.swift in Sources */,
 				C36B44DA2D74EB2800E0BCC5 /* BaseClient.swift in Sources */,
 				C3287A1E2D751229004EEC89 /* Fonts.swift in Sources */,
+				C3034AA42D751E6300EE3076 /* HomeRepo.swift in Sources */,
 				C36B44AF2D74EB2800E0BCC5 /* UIView_Ext.swift in Sources */,
 				C36B44B42D74EB2800E0BCC5 /* Constants.swift in Sources */,
 				C3287A062D750695004EEC89 /* GradientView.swift in Sources */,
 				C36B44AD2D74EB2800E0BCC5 /* UICollectionView_Ext.swift in Sources */,
-				C36B44D22D74EB2800E0BCC5 /* AuthRouter.swift in Sources */,
+				C36B44D22D74EB2800E0BCC5 /* HomeRouter.swift in Sources */,
 				C36B44CB2D74EB2800E0BCC5 /* Coordinator.swift in Sources */,
 				C3287A292D751694004EEC89 /* BrandCell.swift in Sources */,
 				C36B44B62D74EB2800E0BCC5 /* AppCoordinator.swift in Sources */,
 				C36B44E52D74EF0800E0BCC5 /* HomeVC.swift in Sources */,
-				C36B44D32D74EB2800E0BCC5 /* AuthClient.swift in Sources */,
+				C36B44D32D74EB2800E0BCC5 /* HomeClient.swift in Sources */,
 				C36B44B72D74EB2800E0BCC5 /* MainNavigator.swift in Sources */,
 				C36B44CD2D74EB2800E0BCC5 /* BaseWireFrame.swift in Sources */,
 				C36B44AB2D74EB2800E0BCC5 /* UITextField_ext.swift in Sources */,
@@ -609,6 +665,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C3034AA52D7523C500EE3076 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
 		C36B44602D74EAC300E0BCC5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -636,6 +700,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C3034AA62D7523C500EE3076 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3034AA52D7523C500EE3076 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		C36B44612D74EAC400E0BCC5 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C36B44602D74EAC300E0BCC5 /* XCRemoteSwiftPackageReference "Alamofire" */;
