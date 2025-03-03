@@ -16,6 +16,13 @@ class ModelsViewModel:ViewModel {
     var isGrid:BehaviorRelay<Bool> = .init(value: false)
     var brandImageURLSubject:PublishSubject<String> = .init()
     
+    var models: BehaviorRelay<[Car]> = .init(value: [])
+    var ads: BehaviorRelay<[Ad]> = .init(value: [])
+    
+    var itemsCount:Int {
+        isGrid.value == false ? (models.value.count + ads.value.count): models.value.count
+    }
+    
     private var brandImageURL:String
     private var brandId:Int
     private var modelsRepo: ModelsRepo
@@ -37,13 +44,20 @@ class ModelsViewModel:ViewModel {
         isLoading.accept(true)
         do {
             let result = try await modelsRepo.getBrandModels(category: 3, brandId: brandId, currentPage: currentPage)
-//            brands.append(contentsOf: result)
-//            
-//            // Update filteredBrands with the initial data
-//            filteredBrands.accept(brands)
+            models.accept(result.cars)
+            ads.accept(result.ads)
         } catch {
             hasErrInTxt.onNext(error.localizedDescription)
         }
         isLoading.accept(false)
+    }
+    func configureAdCell(_ cell:AdCellViewModel,item:Int){
+        let ad = ads.value[item]
+        cell.configure(imageURL: ad.image)
+    }
+    func configureCarCell(_ cell: ModelCellViewModel,item:Int){
+        let index = item >= 2 ? (item - 1) : item
+        let item = models.value[index]
+        cell.configure(imageURL: item.image, modelName: item.name, modelPrice: "\(item.price)", modelYear: item.ModelYear, isGrid: isGrid.value)
     }
 }

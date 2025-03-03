@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-Gv-kfh">
-                        <rect key="frame" x="0.0" y="0.0" width="379" height="157"/>
+                        <rect key="frame" x="8" y="8" width="363" height="141"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-Qf-QNq">
-                                <rect key="frame" x="0.0" y="0.0" width="379" height="157"/>
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="141"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,10 +41,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="L5w-Gv-kfh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HgJ-wg-XEF"/>
-                <constraint firstAttribute="trailing" secondItem="L5w-Gv-kfh" secondAttribute="trailing" id="W6I-SC-yDs"/>
-                <constraint firstItem="L5w-Gv-kfh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YEd-ds-cWN"/>
-                <constraint firstAttribute="bottom" secondItem="L5w-Gv-kfh" secondAttribute="bottom" id="tiR-wG-8j6"/>
+                <constraint firstItem="L5w-Gv-kfh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="HgJ-wg-XEF"/>
+                <constraint firstAttribute="trailing" secondItem="L5w-Gv-kfh" secondAttribute="trailing" constant="8" id="W6I-SC-yDs"/>
+                <constraint firstItem="L5w-Gv-kfh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="YEd-ds-cWN"/>
+                <constraint firstAttribute="bottom" secondItem="L5w-Gv-kfh" secondAttribute="bottom" constant="8" id="tiR-wG-8j6"/>
             </constraints>
             <size key="customSize" width="379" height="157"/>
             <connections>

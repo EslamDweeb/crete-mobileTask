@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 protocol ModelCellViewModel{
-    func configure(imageURL:String,modelName:String,modelPrice:String,modelYear:String)
+    func configure(imageURL:String,modelName:String,modelPrice:String,modelYear:String,isGrid:Bool)
 }
 class ModelCell: UICollectionViewCell,ModelCellViewModel {
     
@@ -25,11 +25,18 @@ class ModelCell: UICollectionViewCell,ModelCellViewModel {
         super.awakeFromNib()
         // Initialization code
     }
-    func configure(imageURL: String, modelName: String, modelPrice: String, modelYear: String) {
+    func configure(imageURL: String, modelName: String, modelPrice: String, modelYear: String,isGrid:Bool) {
         brandModelImage.kf.setImage(with: URL(string: imageURL))
         modelNameLbl.text = modelName
         modelYearLbl.text = modelYear
         modelPriceLbl.text = modelPrice
+        if isGrid {
+            containerStack.axis = .vertical
+            brandModelImageHieghtConstraint.constant = 75
+        }else{
+            containerStack.axis = .horizontal
+            brandModelImageHieghtConstraint.constant = 110
+        }
     }
 }
 

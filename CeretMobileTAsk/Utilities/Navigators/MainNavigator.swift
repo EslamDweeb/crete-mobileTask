@@ -24,7 +24,7 @@ class MainNavigator:Navigator{
     func viewController(for destination: Destination) -> UIViewController {
         switch destination{
         case .models(let id,let imageURL):
-            let viewModel = ModelsViewModel(brandId: id, brandImageURL: imageURL)
+            let viewModel = ModelsViewModel(modelsRepo: DefaultModelRepo(client: ModelsClient()), brandId: id, brandImageURL: imageURL)
             return ModelsVC(viewModel: viewModel, coordinator: coordinator)
 
        
