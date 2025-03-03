@@ -13,7 +13,7 @@ class MainNavigator:Navigator{
     var coordinator: Coordinator
     
     enum Destination {
-       // case home
+        case models(id:Int,imageURL:String)
        
     }
     
@@ -23,10 +23,10 @@ class MainNavigator:Navigator{
     
     func viewController(for destination: Destination) -> UIViewController {
         switch destination{
-      //  case .home:
-       //     return HomeVC(viewModel: <#T##HomeViewModel#>, coordinator: <#T##Coordinator#>)
-//        case .main:
-//            return MainTabBarVC(coordinator: coordinator)
+        case .models(let id,let imageURL):
+            let viewModel = ModelsViewModel(brandId: id, brandImageURL: imageURL)
+            return ModelsVC(viewModel: viewModel, coordinator: coordinator)
+
        
         }
     }
