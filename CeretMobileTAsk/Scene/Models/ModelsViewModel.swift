@@ -18,13 +18,32 @@ class ModelsViewModel:ViewModel {
     
     private var brandImageURL:String
     private var brandId:Int
-    
-    init(brandId:Int,brandImageURL:String){
+    private var modelsRepo: ModelsRepo
+    var currentPage = 1
+    init(modelsRepo: ModelsRepo,brandId:Int,brandImageURL:String){
+        self.modelsRepo = modelsRepo
         self.brandId = brandId
         self.brandImageURL = brandImageURL
     }
     
     func viewDidload(){
         brandImageURLSubject.onNext(brandImageURL)
+        Task {
+            await getModels()
+        }
+    }
+    
+    private func getModels() async{
+        isLoading.accept(true)
+        do {
+            let result = try await modelsRepo.getBrandModels(category: 3, brandId: brandId, currentPage: currentPage)
+//            brands.append(contentsOf: result)
+//            
+//            // Update filteredBrands with the initial data
+//            filteredBrands.accept(brands)
+        } catch {
+            hasErrInTxt.onNext(error.localizedDescription)
+        }
+        isLoading.accept(false)
     }
 }
