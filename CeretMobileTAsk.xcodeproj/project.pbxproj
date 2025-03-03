@@ -25,6 +25,8 @@
 		C31E05E22D75D8D200668321 /* BrandModelsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E12D75D8D200668321 /* BrandModelsDTO.swift */; };
 		C31E05E42D75DA8800668321 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E32D75DA8800668321 /* Car.swift */; };
 		C31E05E62D75DC2200668321 /* DefaultModelRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E52D75DC2200668321 /* DefaultModelRepo.swift */; };
+		C31E05E92D75E3CC00668321 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05E72D75E3CC00668321 /* AdCell.swift */; };
+		C31E05EA2D75E3CC00668321 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31E05E82D75E3CC00668321 /* AdCell.xib */; };
 		C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */; };
 		C3287A062D750695004EEC89 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A052D750695004EEC89 /* GradientView.swift */; };
 		C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3287A072D750C48004EEC89 /* SearchTextField.swift */; };
@@ -83,6 +85,8 @@
 		C31E05E12D75D8D200668321 /* BrandModelsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModelsDTO.swift; sourceTree = "<group>"; };
 		C31E05E32D75DA8800668321 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		C31E05E52D75DC2200668321 /* DefaultModelRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModelRepo.swift; sourceTree = "<group>"; };
+		C31E05E72D75E3CC00668321 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		C31E05E82D75E3CC00668321 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		C3287A022D74FA2E004EEC89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3287A052D750695004EEC89 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C3287A072D750C48004EEC89 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			children = (
 				C31E05C92D75CD7A00668321 /* ModelCell.swift */,
 				C31E05CA2D75CD7A00668321 /* ModelCell.xib */,
+				C31E05E72D75E3CC00668321 /* AdCell.swift */,
+				C31E05E82D75E3CC00668321 /* AdCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				C3287A192D751229004EEC89 /* Poppins-Light.ttf in Resources */,
 				C31E05D02D75CD9C00668321 /* ModelsVC.xib in Resources */,
 				C3287A212D751229004EEC89 /* Poppins-Regular.ttf in Resources */,
+				C31E05EA2D75E3CC00668321 /* AdCell.xib in Resources */,
 				C36B44E62D74EF0800E0BCC5 /* HomeVC.xib in Resources */,
 				C3287A252D751229004EEC89 /* Poppins-SemiBold.ttf in Resources */,
 				C3287A1A2D751229004EEC89 /* Poppins-Medium.ttf in Resources */,
@@ -509,6 +516,7 @@
 				C3287A082D750C48004EEC89 /* SearchTextField.swift in Sources */,
 				C36B44B02D74EB2800E0BCC5 /* String_Ext.swift in Sources */,
 				C36B444D2D74E8BB00E0BCC5 /* AppDelegate.swift in Sources */,
+				C31E05E92D75E3CC00668321 /* AdCell.swift in Sources */,
 				C31E05D22D75CDB300668321 /* ModelsViewModel.swift in Sources */,
 				C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */,
 				C31E05CF2D75CD9C00668321 /* ModelsVC.swift in Sources */,
