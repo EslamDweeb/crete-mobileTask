@@ -9,7 +9,7 @@ import UIKit
 extension UIColor {
     
     static let gradiantOrange:UIColor = .init(hex: "#EB8855")
-   
+    static let lightGray:UIColor = .init(hex: "#969696")
     
     
     

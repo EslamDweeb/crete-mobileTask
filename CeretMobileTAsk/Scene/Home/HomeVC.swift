@@ -81,6 +81,7 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
                 }
             }
         }.disposed(by: disposeBag)
+        
         searchField.rx.text.orEmpty
                     .bind(to: viewModel.searchText)
                     .disposed(by: disposeBag)
@@ -98,21 +99,9 @@ class HomeVC: BaseWireFrame<HomeViewModel> {
                  .subscribe(onNext: { [weak self] indexPath in
                      guard let self = self else { return }
                      let selectedBrand = self.viewModel.filteredBrands.value[indexPath.item]
-                     print("Selected brand: \(selectedBrand.name)")
+                     self.coordinator.main.navigate(to: .models(id: selectedBrand.id, imageURL: selectedBrand.image))
                  })
                  .disposed(by: disposeBag)
     }
 
 }
-//extension HomeVC: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 30
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-////        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarBrandCell.reuseIdentifier, for: indexPath) as! CarBrandCell
-////        cell.configure(with: carBrands[indexPath.item])
-//        let cell = collectionView.dequeue(indexPath: indexPath) as BrandCell
-//        return cell
-//    }
-//}
