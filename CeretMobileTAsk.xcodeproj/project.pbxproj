@@ -35,7 +35,7 @@
 		C31E05F72D7645A400668321 /* VehiclesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F62D7645A400668321 /* VehiclesResponseDTO.swift */; };
 		C31E05FA2D76460C00668321 /* ModelGenerationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05F92D76460C00668321 /* ModelGenerationsRouter.swift */; };
 		C31E05FC2D76461900668321 /* ModelGenerationsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FB2D76461900668321 /* ModelGenerationsClient.swift */; };
-		C31E05FE2D76476600668321 /* Vechile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FD2D76476600668321 /* Vechile.swift */; };
+		C31E05FE2D76476600668321 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FD2D76476600668321 /* Vehicle.swift */; };
 		C31E06002D76525400668321 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E05FF2D76525400668321 /* TableHeaderView.swift */; };
 		C31E06032D765BB300668321 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31E06012D765BB300668321 /* VehicleCell.swift */; };
 		C31E06042D765BB300668321 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C31E06022D765BB300668321 /* VehicleCell.xib */; };
@@ -77,6 +77,7 @@
 		C36B44DE2D74EBD200E0BCC5 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = C36B44DD2D74EBD200E0BCC5 /* MBProgressHUD */; };
 		C36B44E52D74EF0800E0BCC5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B44E32D74EF0800E0BCC5 /* HomeVC.swift */; };
 		C36B44E62D74EF0800E0BCC5 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36B44E42D74EF0800E0BCC5 /* HomeVC.xib */; };
+		C379F1962D768AD500066621 /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C379F1952D768AD500066621 /* FloatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +108,7 @@
 		C31E05F62D7645A400668321 /* VehiclesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesResponseDTO.swift; sourceTree = "<group>"; };
 		C31E05F92D76460C00668321 /* ModelGenerationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationsRouter.swift; sourceTree = "<group>"; };
 		C31E05FB2D76461900668321 /* ModelGenerationsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGenerationsClient.swift; sourceTree = "<group>"; };
-		C31E05FD2D76476600668321 /* Vechile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vechile.swift; sourceTree = "<group>"; };
+		C31E05FD2D76476600668321 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		C31E05FF2D76525400668321 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		C31E06012D765BB300668321 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		C31E06022D765BB300668321 /* VehicleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 		C36B44AA2D74EB2700E0BCC5 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		C36B44E32D74EF0800E0BCC5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C36B44E42D74EF0800E0BCC5 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		C379F1952D768AD500066621 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +183,7 @@
 				C31E05DA2D75D83D00668321 /* Ads.swift */,
 				C31E05DC2D75D86D00668321 /* AttributeHint.swift */,
 				C31E05E32D75DA8800668321 /* Car.swift */,
-				C31E05FD2D76476600668321 /* Vechile.swift */,
+				C31E05FD2D76476600668321 /* Vehicle.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -265,6 +267,7 @@
 				C31E05FF2D76525400668321 /* TableHeaderView.swift */,
 				C31E06012D765BB300668321 /* VehicleCell.swift */,
 				C31E06022D765BB300668321 /* VehicleCell.xib */,
+				C379F1952D768AD500066621 /* FloatingView.swift */,
 			);
 			path = ModelGenerations;
 			sourceTree = "<group>";
@@ -576,7 +579,7 @@
 				C31E06002D76525400668321 /* TableHeaderView.swift in Sources */,
 				C3287A032D74FA2E004EEC89 /* HomeViewModel.swift in Sources */,
 				C31E05CF2D75CD9C00668321 /* ModelsVC.swift in Sources */,
-				C31E05FE2D76476600668321 /* Vechile.swift in Sources */,
+				C31E05FE2D76476600668321 /* Vehicle.swift in Sources */,
 				C36B44AC2D74EB2800E0BCC5 /* UITableView_Ext.swift in Sources */,
 				C31E05D52D75D58200668321 /* ModelsRouter.swift in Sources */,
 				C31E05FA2D76460C00668321 /* ModelGenerationsRouter.swift in Sources */,
@@ -591,6 +594,7 @@
 				C31E05D72D75D58C00668321 /* ModelsClient.swift in Sources */,
 				C31E05DD2D75D86D00668321 /* AttributeHint.swift in Sources */,
 				C31E05D92D75D81A00668321 /* ModelsRepo.swift in Sources */,
+				C379F1962D768AD500066621 /* FloatingView.swift in Sources */,
 				C31E05DB2D75D83D00668321 /* Ads.swift in Sources */,
 				C31E05F12D7643FB00668321 /* ModelGenerationsViewModel.swift in Sources */,
 				C31E05EE2D7643E700668321 /* ModelGenerationVC.swift in Sources */,

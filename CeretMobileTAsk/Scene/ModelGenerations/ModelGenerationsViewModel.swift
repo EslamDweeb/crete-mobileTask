@@ -13,7 +13,7 @@ class ModelGenerationsViewModel:ViewModel{
     
     var hasErrInTxt: PublishSubject<String> = .init()
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
-    var vechiles: BehaviorRelay<[Vechile]> = .init(value: [])
+    var vechiles: BehaviorRelay<[Vehicle]> = .init(value: [])
     private var model:Car
     private var modelGenerationsRepo:ModelGenerationRepo
     private(set) var brandImageURL:String

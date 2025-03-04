@@ -14,7 +14,7 @@ class DefaultModelGenerationRepo:ModelGenerationRepo {
         self.client = client
     }
    
-    func getVechiles(category: Int, modelId: Int, identificationAttributeId: Int, identificationAttributeValueId: Int) async throws -> [Vechile] {
+    func getVechiles(category: Int, modelId: Int, identificationAttributeId: Int, identificationAttributeValueId: Int) async throws -> [Vehicle] {
         let result: Result<VehiclesResponseDTO, NetworkError>
         do {
             result = try await client.getVechiles(category: category, modelId: modelId, identificationAttributeId: identificationAttributeId, identificationAttributeValueId: identificationAttributeValueId)

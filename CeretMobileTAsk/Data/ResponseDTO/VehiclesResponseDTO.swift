@@ -50,7 +50,7 @@ struct VehiclesDTO: Codable,toDomain {
         case inCompareList = "in_compare_list"
         case extraAttributes = "extra_attributes"
     }
-    func toDomain() -> Vechile {
+    func toDomain() -> Vehicle {
         .init(name: name, price: price, extraAttributes: extraAttributes)
     }
 }

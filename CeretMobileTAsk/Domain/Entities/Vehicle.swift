@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Vechile{
+struct Vehicle{
     let name: String
     let price: Int
     let extraAttributes: [String]?

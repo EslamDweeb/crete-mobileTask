@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="backBtn" destination="eDw-7u-lcS" id="SB8-cJ-BiR"/>
                 <outlet property="brandLogoImage" destination="um4-9u-JSK" id="FPJ-eP-7RN"/>
+                <outlet property="compareBtn" destination="VE1-Px-NSn" id="SVi-K2-V6K"/>
                 <outlet property="vechilesTableView" destination="gzk-ZY-e9k" id="XDU-hp-Pki"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -41,6 +42,19 @@
                     <rect key="frame" x="0.0" y="114" width="393" height="704"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE1-Px-NSn">
+                    <rect key="frame" x="323" y="748" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.53333333333333333" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="04V-fL-aCg"/>
+                        <constraint firstAttribute="width" constant="50" id="xKL-p4-W5F"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Compare Icon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,16 +63,19 @@
                 <constraint firstItem="eDw-7u-lcS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6Sb-ZN-gb4"/>
                 <constraint firstItem="um4-9u-JSK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Acg-9k-WOK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gzk-ZY-e9k" secondAttribute="trailing" id="CYA-HI-yuN"/>
+                <constraint firstItem="VE1-Px-NSn" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="Kup-b4-9zR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gzk-ZY-e9k" secondAttribute="bottom" id="NBx-32-YE6"/>
                 <constraint firstItem="gzk-ZY-e9k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yh9-cs-dod"/>
                 <constraint firstItem="um4-9u-JSK" firstAttribute="centerY" secondItem="eDw-7u-lcS" secondAttribute="centerY" id="f1G-2V-iBt"/>
                 <constraint firstItem="eDw-7u-lcS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ujX-mi-zh6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VE1-Px-NSn" secondAttribute="trailing" constant="20" id="wIE-bz-NXJ"/>
             </constraints>
             <point key="canvasLocation" x="2" y="20"/>
         </view>
     </objects>
     <resources>
         <image name="Back" width="30.333333969116211" height="40"/>
+        <image name="Compare Icon" width="35" height="28"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

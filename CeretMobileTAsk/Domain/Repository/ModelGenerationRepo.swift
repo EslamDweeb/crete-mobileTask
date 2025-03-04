@@ -8,6 +8,6 @@
 import Foundation
 protocol ModelGenerationRepo{
     
-    func getVechiles(category:Int,modelId:Int,identificationAttributeId:Int,identificationAttributeValueId:Int) async throws -> [Vechile]
+    func getVechiles(category:Int,modelId:Int,identificationAttributeId:Int,identificationAttributeValueId:Int) async throws -> [Vehicle]
     
 }

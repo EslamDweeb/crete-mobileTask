@@ -21,7 +21,7 @@ struct CarModelDTO: Codable,toDomain {
     let vehicleId: Int
     let name: String
     let image: String
-    let leastDeposit: Int
+    let leastDeposit: Double
     let leastInstallment: Int
     let identificationAttributeId: Int
     let identificationAttributeValueId: Int

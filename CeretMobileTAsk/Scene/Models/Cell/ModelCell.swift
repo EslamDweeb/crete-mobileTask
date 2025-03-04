@@ -29,7 +29,7 @@ class ModelCell: UICollectionViewCell,ModelCellViewModel {
         brandModelImage.kf.setImage(with: URL(string: imageURL))
         modelNameLbl.text = modelName
         modelYearLbl.text = modelYear
-        startFromLbl.text = startFrom
+        startFromLbl.text = startFrom + " EGP"
         if isGrid {
             containerStack.axis = .vertical
             brandModelImageHieghtConstraint.constant = 75
