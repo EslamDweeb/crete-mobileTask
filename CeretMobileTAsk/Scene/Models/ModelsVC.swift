@@ -22,6 +22,7 @@ class ModelsVC: BaseWireFrame<ModelsViewModel> {
         super.viewDidLoad()
         viewModel.viewDidload()
         setupCollectionView()
+        self.brandLogoImageView.kf.setImage(with: URL(string: viewModel.brandImageURL))
     }
     private func setupCollectionView(){
         modelsCollectionView.registerCell(cellClass: AdCell.self)
@@ -54,14 +55,7 @@ class ModelsVC: BaseWireFrame<ModelsViewModel> {
             }
         }.disposed(by: disposeBag)
         
-        viewModel.brandImageURLSubject.subscribe {[weak self] url in
-            guard let self,let url = url.element else{return}
-            if url != "" {
-                DispatchQueue.main.async {
-                    self.brandLogoImageView.kf.setImage(with: URL(string: url))
-                }
-            }
-        }.disposed(by: disposeBag)
+
         
         viewModel.models.subscribe { [weak self] cars in
             guard let self else{return}
@@ -127,9 +121,10 @@ extension ModelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        let selectedModel = models[indexPath.row]
-        //        let generationVC = GenerationViewController()
-        //        generationVC.model = selectedModel
-        //        navigationController?.pushViewController(generationVC, animated: true)
+        if indexPath.item < 2 {
+            coordinator.main.navigate(to: .modelGeneration(brandImageURL: viewModel.brandImageURL, model: viewModel.models.value[indexPath.item]))
+        }else if indexPath.item > 2{
+            coordinator.main.navigate(to: .modelGeneration(brandImageURL: viewModel.brandImageURL, model: viewModel.models.value[indexPath.item - 1]))
+        }
     }
 }

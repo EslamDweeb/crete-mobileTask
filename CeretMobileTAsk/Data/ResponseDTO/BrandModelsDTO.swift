@@ -21,7 +21,7 @@ struct CarModelDTO: Codable,toDomain {
     let vehicleId: Int
     let name: String
     let image: String
-    let leastDeposit: Int
+    let leastDeposit: Double
     let leastInstallment: Int
     let identificationAttributeId: Int
     let identificationAttributeValueId: Int
@@ -49,6 +49,6 @@ struct CarModelDTO: Codable,toDomain {
         case parentBrand = "parent_brand"
     }
     func toDomain() -> Car {
-        return .init(id: id, vehicleId: vehicleId, name: name, image: image, ModelYear: attributeValue, price: price)
+        return .init(id: id, vehicleId: vehicleId, name: name, image: image, ModelYear: attributeValue, startFrom: leastDeposit,identificationAttributeId: identificationAttributeId,identificationAttributeValueId: identificationAttributeValueId)
     }
 }

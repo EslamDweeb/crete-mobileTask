@@ -120,8 +120,8 @@
                 <outlet property="brandModelImageHieghtConstraint" destination="8aZ-oD-cgq" id="6Td-6j-Fbm"/>
                 <outlet property="containerStack" destination="ZIh-b2-y5M" id="auA-o6-70e"/>
                 <outlet property="modelNameLbl" destination="DHg-3I-KcP" id="chr-oo-Q1C"/>
-                <outlet property="modelPriceLbl" destination="xfR-ko-wWZ" id="ICH-sa-JsN"/>
                 <outlet property="modelYearLbl" destination="FL6-QL-ncJ" id="qrb-1X-ekC"/>
+                <outlet property="startFromLbl" destination="xfR-ko-wWZ" id="ICH-sa-JsN"/>
             </connections>
             <point key="canvasLocation" x="165.64885496183206" y="28.87323943661972"/>
         </collectionViewCell>

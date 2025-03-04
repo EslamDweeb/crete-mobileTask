@@ -17,5 +17,7 @@ struct Car {
     let name: String
     let image: String
     let ModelYear: String
-    let price: Int
+    let startFrom: Double
+    let identificationAttributeId: Int
+    let identificationAttributeValueId: Int
 }

@@ -10,7 +10,8 @@ extension UIColor {
     
     static let gradiantOrange:UIColor = .init(hex: "#EB8855")
     static let lightGray:UIColor = .init(hex: "#969696")
-    
+    static let darkGray:UIColor = .init(hex: "#707070")
+    static let vechileBtnTint:UIColor = .init(hex: "#3D3D3D")
     
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {
